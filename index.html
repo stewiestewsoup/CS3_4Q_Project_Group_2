@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author1" content="Kathleen Pasaol">
+    <meta name="author2" content="Althea Abilla">
+    <meta name="author3" content="Mikay Leonida">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake For A Cause :  Create Account</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kneading in times of Need</h1> <!--Tagline-->
+        <h3>Sign-up for BakeM.A.K.</h3> <!--sign up message on top-->
+        <hr>
+    </header>
+    <form id="signup" onsubmit="return signup()">
+        <aside id="bklogo"></aside><!--Logo in the Side-->
+        <div class="name">
+            <label for="fname" class="name">First Name</label><br><!--Requires First name-->
+            <input type="text" class="name" id="fname" name="fname" placeholder="e.g. Mary Kyla" oninput="checkfn()">
+            <span class="requiredInputs" id="fnreq"></span><br><br>
+
+            <label for="mname" class="name">Middle Name</label><br><!--Requires Middle name-->
+            <input type="text" class="name" name="mname" id="mname" placeholder="Binosa" oninput="checkmn()">
+            <span class="requiredInputs" id="mnreq"></span><br><br>
+
+            <label for="lname" class="name">Last Name</label><br><!--Requires Last name-->
+            <input for="text" class="name" id="lname" name="lname" placeholder="Leonida" oninput="checkln()"></input>
+            <span class="requiredInputs" id="lnreq"></span><br><br>
+        </div>
+        <label id="emaillabel" for="email">Email Address</label><br><!--Requires email / mail -->
+        <input type="email" id="email" name="email" placeholder="marykylaleonida@domain.com" oninput="checkmail()" autocomplete="on">
+        <span class="requiredInputs" id="mailreq"></span><br><br>
+
+        <label id="pwordlabel" for="pword">Password</label><br><!--Requires Password-->
+        <input type="password" id="pword" name="pword" placeholder="Use a strong password" oninput="checkpass()">
+        <span class="requiredInputs" id="passreq"></span><br><br>
+
+        <div class="info">
+            <label id="cnumberlabel" for="cnumber">Contact Number</label><br><!--RING RING CALL ME CALL ME RING RING, Contact Number of User-->
+            <input type="tel" name="cnumber" id="cnumber" placeholder="09** / Telephone Number" oninput="checknum()">
+            <br><br>
+            <div class="sx"><!--Sex of User-->
+                <label for="sex">Sex</label></span><br>
+                <input type="radio" id="fem" name="sex" value="Female" oninput="checksex()">
+                <label for="fem">Female</label></br>
+                <input type="radio" id="male" name="sex" value="Male" oninput="checksex()">
+                <label for="male">Male</label></br>
+                <input type="radio" id="pnts" name="sex" value="Prefer Not To Mention" oninput="checksex()">
+                <label for="pnts">Prefer Not To Mention</label><br>
+            <span class="requiredInputs" id="sexreq"></span>
+            </div>
+        </div><br><br>
+        <div id="campaign">
+            <h4 id="articlelabel">About Campaign:</h4><!--About the Campaign! Brief Description-->
+            <article id="article">
+                The campaign advocates for the garnerning of funds through paid baking lessons and donations, that is then given to connected campaigns or collaborated campaigns that advocates for the wellness of those with chronic illnesses.
+            </article><br><br>
+            <div>
+                <label id="supportlabel" for="support">Why I support this campaign?</label><span class="reqSymbol">*</span><br>
+                <textarea name="support" id="support" cols="60" rows="5" placeholder="State why you want to support our campaign" onsubmit="checkSupport()"></textarea><br><br> <!--Why the user supports the campaign-->
+                <span class="requiredInputs" id="freq"></span>
+
+                <label id="foundoclabel" for="foundoc">How I found out about this campaign?</label><br><!--How they encountered and found out about the campaign/ get to know the user <33-->
+                <textarea name="foundoc" id="foundoc" cols="60" rows="3" placeholder="example: from my colleagues / on official instagram page"></textarea><br><br>
+            </div>
+            <input type="submit" value="Register" id="submit"> <!--Submit-->
+        </div>
+    </form>    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../imgs/csbg2.png') no-repeat center center fixed; 
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 10%;
+}
+
+header #bkmaklogo img {
+    height: 80px;
+}
+
+header #brandname {
+    font-size: 2em;
+    font-weight: bold;
+    color: #5e3a1f;
+}
+
+header div a {
+    text-decoration: none;
+    color: #5e3a1f;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header div a:hover {
+    color: #333;
+}
+
+main#goalsP {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+main#goalsP h1, main#goalsP h2 {
+    text-align: center;
+    color: #5e3a1f;
+}
+
+main#goalsP div {
+    margin-bottom: 20px;
+}
+
+main#goalsP p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer #cr {
+    font-size: 1em;
+    color: #5e3a1f;
+}
+

@@ -1,0 +1,96 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../imgs/csbg2.png') no-repeat center center fixed; 
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 10%;
+}
+
+header #bkmaklogo img {
+    height: 80px;
+}
+
+header #brandname {
+    font-size: 2em;
+    font-weight: bold;
+    color: #5e3a1f;
+}
+
+header div a {
+    text-decoration: none;
+    color: #5e3a1f;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header div a:hover {
+    color: #333;
+}
+
+main#profileP {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+main#profileP h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main#profileP p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+main#profileP span {
+    font-size: 1.2em;
+    color: #5e3a1f;
+}
+
+aside {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+aside h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #5e3a1f;
+}
+
+aside p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer #cr {
+    font-size: 1em;
+    color: #5e3a1f;
+}
